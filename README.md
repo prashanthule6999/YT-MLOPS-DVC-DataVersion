@@ -1,3 +1,32 @@
+In MLOps, we are not only dealing with code, but also with data, models, and experiments. Traditional version control systems like Git are excellent for code, but they are not designed to handle large datasets, ML models, or experiment tracking. That’s where DVC comes in.
+
+✅ Key Reasons to Use DVC in MLOps:
+Data Versioning
+Just like Git versions code, DVC versions datasets and ML models.
+You can reproduce an experiment later with the exact same dataset and model used before.
+Experiment Tracking
+Keeps track of different training runs, parameters, metrics, and outputs.
+Helps compare models easily (accuracy, loss, etc.).
+Efficient Storage & Sharing
+Large files (datasets, model binaries) are stored outside Git (e.g., S3, GCS, Azure Blob, local storage).
+Git only tracks metadata (hashes), making repositories lightweight.
+Reproducibility
+Every experiment (data + code + parameters + environment) can be reproduced exactly.
+Critical for debugging, auditing, or compliance.
+Pipelines & Automation
+DVC pipelines define data preprocessing, training, evaluation as reproducible stages.
+Helzs automate workflows in CI/CD pipelines.
+Team Collaboration
+Data scientists and ML engineers can collaborate easily.
+Everyone gets the same data/model versions without emailing zip files or manually syncing.
+
+🔑 In short:
+Git → version control for code
+DVC → version control for data, models, and experiments
+Together, they form the backbone of reproducible and collaborative MLOps.
+
+-----------------------------------------------------------------------------------------------
+
 # YT-MLOPS-DVC-DataVersion
 This repo impliments the idea of data versioning using DVC tool.
 
